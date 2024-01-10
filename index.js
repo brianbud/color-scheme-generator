@@ -20,5 +20,18 @@ function getScheme() {
       colorsArray = apiData[0].colors;
       console.log(apiData);
       console.log(colorsArray);
+      renderColors();
     });
+}
+
+function renderColors() {
+  let html = '';
+
+  colorsArray.map((color) => {
+    const value = color.hex.value;
+
+    html += `<div style="background-color: ${value};"></div>`;
+  });
+
+  document.querySelector('#colors-container').innerHTML = html;
 }
