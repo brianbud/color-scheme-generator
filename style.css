@@ -4,11 +4,24 @@ body {
   margin: 0;
 }
 
+input,
+select,
+button,
+select {
+  cursor: pointer;
+}
+
+button {
+  padding: 1rem;
+  background-color: #fff;
+}
+
 main {
   width: 90%;
-  outline: 2px solid black;
+  outline: 2px solid rgb(163, 163, 163);
   height: 50vh;
   margin: 1rem auto;
+  border-radius: 8px;
 }
 
 #container {
@@ -18,9 +31,12 @@ main {
 }
 
 header {
-  background-color: rgb(255, 143, 143);
   height: 20%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 #container > div {
@@ -31,7 +47,7 @@ header {
 }
 
 #colors-container div {
-  outline: 2px solid rgb(232, 6, 6);
+  outline: 2px solid rgb(255, 255, 255);
   width: 20%;
   height: 100%;
 }
