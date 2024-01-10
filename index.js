@@ -18,8 +18,6 @@ function getScheme() {
     .then((data) => {
       apiData.push(data);
       colorsArray = apiData[0].colors;
-      console.log(apiData);
-      console.log(colorsArray);
       renderColors();
     });
 }
