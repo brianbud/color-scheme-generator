@@ -4,9 +4,10 @@ btn.addEventListener('click', getScheme);
 function getScheme() {
   const colorPicker = document.querySelector('input');
   let hexCode = colorPicker.value.slice(1);
+  const modeChoice = document.querySelector('option').value;
 
   fetch(
-    `https://www.thecolorapi.com/scheme?hex=${hexCode}&mode=analogic&count=5`,
+    `https://www.thecolorapi.com/scheme?hex=${hexCode}&mode=${modeChoice}&count=5`,
     {
       method: 'GET',
     }
