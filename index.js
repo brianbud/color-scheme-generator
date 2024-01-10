@@ -29,8 +29,13 @@ function renderColors() {
 
   colorsArray.map((color) => {
     const value = color.hex.value;
+    const hexValueName = color.hex.clean;
 
-    html += `<div style="background-color: ${value};"></div>`;
+    html += `
+    <div>
+      <div style="background-color: ${value};"></div>
+      <h2>#${hexValueName}</h2>
+    </div>`;
   });
 
   document.querySelector('#colors-container').innerHTML = html;

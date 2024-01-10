@@ -47,7 +47,8 @@ header {
 }
 
 #colors-container div {
-  outline: 2px solid rgb(255, 255, 255);
-  width: 20%;
-  height: 100%;
+  border-right: 2px solid rgb(255, 255, 255);
+  width: 100%;
+  height: 90%;
+  text-align: center;
 }
